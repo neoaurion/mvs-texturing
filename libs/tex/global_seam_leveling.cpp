@@ -176,7 +176,7 @@ global_seam_leveling(UniGraph const & graph, mve::TriangleMesh::ConstPtr mesh,
     std::size_t x_rows = x_row;
     assert(x_rows < static_cast<std::size_t>(std::numeric_limits<int>::max()));
 
-    float const lambda = 0.1f;
+    float const lambda = 0.03f;
 
     /* Fill the Tikhonov matrix Gamma(regularization constraints). */
     std::size_t Gamma_row = 0;
