@@ -9,6 +9,7 @@
 
 #include <fstream>
 #include <cstring>
+#include <cstdint>
 #include <cerrno>
 
 #include <util/exception.h>
