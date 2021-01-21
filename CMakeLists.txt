@@ -48,7 +48,9 @@ find_package(JPEG REQUIRED)
 find_package(PNG REQUIRED)
 find_package(TIFF REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(TBB REQUIRED)
+if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    find_package(TBB REQUIRED)
+endif()
 
 include_directories(SYSTEM
     ${CMAKE_SOURCE_DIR}/libs/mapmap/
